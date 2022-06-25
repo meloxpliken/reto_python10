@@ -10,7 +10,6 @@ HOME = os.path.expanduser('~')
 USER_DIRS = f"{HOME}/.config/user-dirs.dirs"
 USER_DIRS_DICT = {}
 MIMETYPES = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.png': 'image/png', '.txt': 'text/plain'}
-#TOML_DICT = {}
 TOML_DICT = {'directorios': {
                     '1': {'in': '/home/meloxpliken/pruebas/dir1-in1/', 'out': '/home/meloxpliken/pruebas/dir1-out1/', 'actions': ['copy', 'move'], 'filter': '*.png'}, 
                     '2': {'in': '/home/meloxpliken/pruebas/dir2-in2/', 'out': '/home/meloxpliken/pruebas/dir2-out2/', 'actions': ['move'], 'filter': '*.jpeg'}, 
@@ -68,8 +67,8 @@ class Configurator():
     def read(self):
         #self.TOML_DICT = toml.load(self.TOML_FILE)
 #        datos = toml.load(self.TOML_FILE)
+        print(f"\n{toml.dumps(datos)}")
 #        print(datos)
-#        print(f"\n{toml.dumps(datos)}")
         return toml.load(self.TOML_FILE)
 
 

@@ -35,6 +35,7 @@ class InstagramImage:
                 self._args['filter'] not in FILTERS:
             return False
 
+        print("salgo")
         return True
 
 
