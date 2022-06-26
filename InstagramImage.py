@@ -1,5 +1,3 @@
-#from instafilter import Instafilter
-#import cv2
 import os
 from pathlib import Path
 from PIL import Image
@@ -35,7 +33,6 @@ class InstagramImage:
                 self._args['filter'] not in FILTERS:
             return False
 
-        print("salgo")
         return True
 
 
